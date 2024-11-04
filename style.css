@@ -1,0 +1,1477 @@
+@font-face {
+    font-family: "Krungthep";
+    src: url(fonts/Krungthep/Krungthep.ttf);
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(fonts/Helvetica/HelveticaNeueLTPro-Roman.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(fonts/Helvetica/HelveticaNeueLTPro-Bd.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(fonts/Helvetica/HelveticaNeueLTPro-Lt.ttf);
+    font-weight: 200;
+}
+
+.green--color {
+    color: #62FFC9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #000;
+    color: #fff;
+
+}
+
+.logo {
+    width: 80px;
+}
+
+.section--buy-seon{
+    background-image: url(assets/bg_image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 145vh;
+    max-width: calc(100% - 2px);
+    padding-bottom: 30vh;
+
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 2% 10%;
+    justify-content: space-around;
+    color: #7a7474;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1%;
+    font-size: 14px;
+    align-items: center;
+    
+}
+
+.point--link {
+    cursor: pointer;
+}
+
+.title-seon {
+    z-index: 2;
+}
+
+.title-logo {
+    overflow: inherit;
+}
+
+.main--nav {
+    display: flex;
+    width: 100%;
+    gap: 4%;
+    justify-content: flex-end;
+    padding-right: 2%;
+    color: #f5f5fc;
+    opacity: .5;
+}
+
+.link--arrow {
+    width: 15px;
+}
+
+.link--arrow--wrapper {
+    display: flex;
+    gap: 5px;
+}
+
+.nav:nth-child(n) {
+    width: 100%;
+}
+
+.btn {
+    width: 87px;
+    border-radius: 20px;
+    background-color: #000000;
+    border: 2px solid #4d4a4a;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn--nav {
+    background-color: #159867;
+    width: 120px;
+}
+
+.title-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.underline {
+    bottom: 55%;
+    left: 49%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 28%;
+    min-width: 436px;
+}
+
+.title-seon {
+    text-align: center;
+    font-size: 46px;
+    max-width: 430px;
+}
+
+.title--gradient {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#24094d+0,cd45ff+50,cd45ff+50,24094d+100&0.91+1,0.81+100 */
+    background: -moz-linear-gradient(-45deg, rgba(36, 9, 77, 0.91) 0%, rgba(39, 10, 81, 0.91) 1%, rgba(205, 69, 255, 0.86) 50%, rgba(36, 9, 77, 0.81) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(36, 9, 77, 0.91) 0%, rgba(39, 10, 81, 0.91) 1%, rgba(205, 69, 255, 0.86) 50%, rgba(36, 9, 77, 0.81) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(36, 9, 77, 0.91) 0%, rgba(39, 10, 81, 0.91) 1%, rgba(205, 69, 255, 0.86) 50%, rgba(36, 9, 77, 0.81) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e824094d', endColorstr='#cf24094d', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.coin--header {
+    width: 188px;
+    position: relative;
+}
+
+.coin--header::before {
+    border-color: transparent #7116c6 transparent transparent;
+    border-style: solid;
+    border-width: 10px 360px 70px 0;
+    content: "";
+    -webkit-filter: blur(35px);
+    filter: blur(35px);
+    left: 50%;
+    position: absolute;
+    top: 30%;
+    -webkit-transform: translateX(-60%);
+    transform: translateX(-60%);
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo--text {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    gap: 5%;
+}
+
+.logo--text::before {
+    border-color: transparent #7116c6 transparent transparent;
+    border-style: solid;
+    border-width: 10px 360px 70px 0;
+    content: "";
+    -webkit-filter: blur(35px);
+    filter: blur(35px);
+    left: 40%;
+    position: absolute;
+    top: 30%;
+    -webkit-transform: translateX(-60%);
+    transform: translateX(-60%);
+}
+
+.left--text {
+    position: relative;
+    transition: 500ms ease-in-out;
+}
+
+.right--text {
+    position: relative;
+    transition: 500ms ease-in-out;
+}
+
+@media (min-width: 992px) {
+    .logo--text:hover .left--text {
+        transform: translateX(1em);
+    }
+
+    .logo--text:hover .right--text {
+        transform: translateX(-1em);
+    }
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 12px;
+}
+
+/* Animation box*/
+.container {
+    align-items: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    -webkit-mask-image: -webkit-radial-gradient(#fff,#000);
+    max-width: 960px;
+    overflow: hidden;
+    padding: 2px;
+    position: relative;
+    width: 80%;
+}
+
+.overlay {
+    background-color: #120f13;
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.overlay--blur {
+    background-color: #6d00e7;
+    bottom: 0;
+    -webkit-filter: blur(55px);
+    filter: blur(55px);
+    height: 40px;
+    left: 10%;
+    position: absolute;
+    width: 80%;
+}
+
+.container::before {
+    -webkit-animation: rotate 10s linear infinite;
+    animation: rotate 10s linear infinite;
+    background-image: conic-gradient(hsla(0,0%,100%,.6),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.6),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.1),hsla(0,0%,100%,.6));
+    background-repeat: no-repeat;
+    content: "";
+    height: 900%;
+    left: -50%;
+    position: absolute;
+    top: -400%;
+    width: 200%;
+    z-index: -2;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*Grid inside container*/
+
+.grid-content {
+    align-items: flex-start;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 65px;
+    width: 100%;
+    height: 100%;
+    -webkit-backdrop-filter: blur(30px) brightness(120%);
+    backdrop-filter: blur(30px) brightness(120%);
+}
+
+.cols {
+    width: 25%;
+    max-width: 190px;
+    min-width: 144px;
+    min-height: 36px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.col--head {
+    z-index: 3;
+    font-size: 16px;
+    position: relative;
+    min-width: 110px;
+    opacity: 100%;
+}
+
+.col--head::before {
+    z-index: -1;
+    width: 50%;
+    height: 5px;
+    content: "";
+    background: linear-gradient(to right, rgba(184, 124, 255, 0.76) 0%, rgba(107, 107, 107, 0.28) 85%, rgba(107, 107, 107, 0) 99%);
+    background: -webkit-linear-gradient(to right, rgba(184, 124, 255, 0.76) 0%, rgba(107, 107, 107, 0.28) 85%, rgba(107, 107, 107, 0) 99%);
+    background: -moz-linear-gradient(to right, rgba(184, 124, 255, 0.76) 0%, rgba(107, 107, 107, 0.28) 85%, rgba(107, 107, 107, 0) 99%);
+    position: absolute;
+    bottom: 0;
+    left: -3%;
+}
+
+.value {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 250%;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.gradient--value {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f2f2f2+0,220327+100&0.91+1,0.81+100 */
+    background: linear-gradient(180deg,#f2f2f2 0,#69546c);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.value--flex--wrap {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow--flex {
+    display: flex;
+    padding-left: 2%;
+    align-items: center;
+    position: relative;
+}
+
+.arrow--flex::before {
+    background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#2fcb78 99%,#2dca77);
+    border-radius: 0 50px 50px 0;
+    content: "";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff",endColorstr="#2dca77",GradientType=1);
+    height: 50%;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    width: 50px;
+}
+
+.arrow {
+    font-size: 18px;
+    margin-right: 6px;
+    z-index: 1;
+}
+
+.mini-pic {
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.worth {
+    color: hsla(0,0%,100%,.7);
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.btn--main {
+    padding: 15px 15px;
+    box-shadow: inset 0 9px 16px #0EB54E;
+    background: #06b472;
+    width: 200px;
+}
+
+.timeframe {
+    text-align: center;
+    max-width: 480px;
+    font-size: 16px;
+    color: #F2F2F2;
+    opacity: 100%;
+    line-height: 32px;
+    font-weight: 200;
+    margin: 20px auto 0;
+}
+
+.section--participation {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1300px;
+    overflow: hidden;
+    padding: 50px 30px 0 30px;
+    position: relative;
+}
+
+.participation--text {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size: 18px;
+    position: relative;
+    margin: auto;
+    font-weight: 200;
+}
+
+.participation--title {
+    font-size: 46px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.participation--paragraph {
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 38px;
+}
+
+.part--img{
+    width: 130%;
+}
+
+.participation--img--wrapper {
+    border-radius: 50%;
+    margin: auto;
+    max-width: 420px;
+    padding: 25px;
+    width: 40%;
+}
+
+.participation--text::before {
+    top: 0;
+    left: -3%;
+    content: '';
+    width: 4px;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#994af2+0,543d65+100&0.81+0,0.85+99 */
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#994af2+0,543d65+69&0.81+0,0.73+60,0.04+100 */
+    background: -moz-linear-gradient(top, rgba(153, 74, 242, 0.81) 0%, rgba(93, 63, 119, 0.73) 60%, rgba(84, 61, 101, 0.57) 69%, rgba(84, 61, 101, 0.04) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(153, 74, 242, 0.81) 0%, rgba(93, 63, 119, 0.73) 60%, rgba(84, 61, 101, 0.57) 69%, rgba(84, 61, 101, 0.04) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(153, 74, 242, 0.81) 0%, rgba(93, 63, 119, 0.73) 60%, rgba(84, 61, 101, 0.57) 69%, rgba(84, 61, 101, 0.04) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf994af2', endColorstr='#0a543d65', GradientType=0); /* IE6-9 */
+    position: absolute;
+}
+
+.first--para {
+    margin-bottom: 15px;
+}
+
+.second--para {
+    font-weight: bold;
+}
+
+.participation {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4%;
+}
+
+.section--payments::before {
+    top: -19%;
+    left: 11%;
+    background: linear-gradient(90deg,rgba(153,74,242,0) 0,rgba(132,70,199,.5) 23%,rgba(126,69,188,.7) 32%,rgba(84,61,101,0));
+    content: "";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00994af2",endColorstr="#00543d65",GradientType=1);
+    height: 3px;
+    min-width: 200px;
+    position: absolute;
+    width: 15%;
+}
+
+.section--payments{
+    height: 100%;
+    margin-top: 5vh;
+    position: relative;
+    width: 100%;
+}
+
+.information::before {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #461c7e;
+    content: '';
+    border-radius: 50%;
+    filter: blur(80px);
+    -webkit-filter: blur(80px);
+    top: -50%;
+    left: -18%;
+}
+
+.disclaimer--wrapper {
+    margin: auto;
+    max-width: 1300px;
+    padding: 50px 30px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.info--row {
+    display: flex;
+    margin-left: 20px;
+}
+
+.info--row:first-child {
+    margin-left: 0;
+}
+
+.info--key {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    padding-right: 10px;
+    position: relative;
+    max-width: 106px;
+}
+
+.info--text {
+    max-width: 210px;
+    opacity: .75;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.info--row--2 .info--text {
+    max-width: 200px;
+}
+
+.info--row--3 .info--text {
+    max-width: 210px;
+}
+
+.info--key::after {
+    background: linear-gradient(180deg,#7f3aed 0,rgb(58 25 109 / 87%));
+    content: "";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7f3aed",endColorstr="#4d401d77",GradientType=0);
+    height: 145%;
+    position: absolute;
+    right: 8%;
+    top: -24%;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+    width: 5px;
+}
+
+.info--row--2 .info--key {
+    max-width: 170px;
+}
+
+.info--row--3 .info--key {
+    max-width: 183px;
+}
+
+.info--row--2 .info--key::after {
+    right: 4%;
+}
+
+.info--row--3 .info--key::after {
+    right: 0;
+}
+
+.disclaimer {
+    line-height: 30px;
+}
+
+.disclaimer--title {
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 1;
+}
+
+.disclaimer--text {
+    font-size: 14px;
+    max-width: 1150px;
+    opacity: 73%;
+}
+
+.section--payments::after {
+    bottom: 10%;
+    left: 74%;
+    background: linear-gradient(90deg,rgba(153,74,242,0) 0,rgba(132,70,199,.5) 23%,rgba(126,69,188,.7) 32%,rgba(84,61,101,0));
+    content: "";
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00994af2",endColorstr="#00543d65",GradientType=1);
+    height: 3px;
+    min-width: 200px;
+    position: absolute;
+    width: 15%;
+}
+
+.section--effortless {
+    margin: auto;
+    max-width: 1480px;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+.effortless--title {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg,#fff 0,grey);
+    -webkit-background-clip: text;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#69546c",GradientType=0);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.effortless--title::after {
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.65) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 1) 100%), url(assets/glowline.png); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.65) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 1) 100%), url(assets/glowline.png); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.65) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 1) 100%), url(assets/glowline.png); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1); /* IE6-9 */
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: -98%;
+    content: "";
+    height: 100%;
+    z-index: -1;
+    left: 23%;
+    position: absolute;
+    width: 39%;
+    min-width: 700px;
+}
+
+.boxes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    flex-wrap: wrap;
+}
+
+.step {
+    width: 15%;
+    position: relative;
+    margin: 10% 4% 0 4%;
+    min-width: 250px;
+}
+
+.step:first-child {
+    margin-left: 0;
+}
+
+.step:last-child {
+    margin-right: 0;
+}
+
+.step--title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.step--text {
+    opacity: 74%;
+    font-size: 16px;
+    font-weight: 200;
+    padding-top: 5%;
+}
+
+.step--image {
+    width: 90px;
+    position: absolute;
+}
+
+.create--icon {
+    top: -40%;
+    right: 14%;
+}
+
+.verify--icon {
+    top: -40%;
+    right: 10%;
+}
+
+.fiat--icon {
+    top: -40%;
+    right: 13%;
+}
+
+.crowdfund--icon {
+    width: 115px;
+    top: -40%;
+    right: 5%;
+}
+
+.green--number {
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: -30%;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,07db91+52,012823+80&1+0,1+0,0.55+100 */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(7, 219, 145, 0.77) 52%, rgba(1, 40, 35, 0.64) 80%, rgba(1, 40, 35, 0.55) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(7, 219, 145, 0.77) 52%, rgba(1, 40, 35, 0.64) 80%, rgba(1, 40, 35, 0.55) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(7, 219, 145, 0.77) 52%, rgba(1, 40, 35, 0.64) 80%, rgba(1, 40, 35, 0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#8c012823', GradientType=0); /* IE6-9 */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    z-index: -100;
+}
+
+.section--currency{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    max-width: 1480px;
+    padding: 80px 30px;
+}
+
+.currency--text {
+    color: hsla(0,0%,100%,.7);
+    max-width: 720px;
+    text-align: center;
+}
+
+.currency--title {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(180deg,#fff 0,grey);
+    -webkit-background-clip: text;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f2f2f2",endColorstr="#69546c",GradientType=0);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.currency--title::after {
+    z-index: -100;
+    width: 40%;
+    height: 38%;
+    bottom: 28%;
+    left: -50%;
+    content: '';
+    position: absolute;
+    min-width: 700px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&1+0,0.65+15,0+50,0.65+85,1+100 */
+    background: -moz-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.65) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 1) 100%), url(assets/glowline.png); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.65) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 1) 100%), url(assets/glowline.png); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.65) 15%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.65) 85%, rgba(0, 0, 0, 1) 100%), url(assets/glowline.png); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=1); /* IE6-9 */
+    background-repeat: no-repeat;
+}
+
+.currency--wrapper {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    max-width: 720px;
+    position: relative;
+    width: 100%;
+}
+
+.euro, .dollar {
+    width: 265px;
+    height: 175px;
+    align-items: center;
+    background-color: #231c28;
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #422a77;
+    margin: 10px;
+    position: relative;
+
+}
+
+.blur {
+    position: absolute;
+    height: 64%;
+    width: 100%;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.circle {
+    top: -10%;
+    left: 0;
+    height: 40%;
+    width: 30%;
+    position: relative;
+    background-color: #262835;
+    border-radius: 50%;
+    border-top: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    z-index: 2;
+}
+
+.curr--text {
+    font-size: 24px;
+    font-weight: 700;
+    left: 50%;
+    position: absolute;
+    top: 65%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+.euro::before, .dollar::before {
+    top: 34%;
+    left: 15%;
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 4%;
+    background: transparent linear-gradient(274deg, #887BED 0%, #0780E8 100%);
+    box-shadow: rgba(65, 95, 221, 0.376) 0 25px 15px -15px;
+}
+
+.euro::after, .dollar::after {
+    position: absolute;
+    bottom: 0;
+    height: 46%;
+    left: 8%;
+    width: 14%;
+    content: "";
+    background-color: #994af2;
+    border-radius: 28px;
+
+}
+
+
+@media (max-width: 1564px) {
+    .step:nth-child(3) {
+        margin-right: 6%;
+    }
+
+    .step:last-child {
+        margin-left: 2%;
+        margin-right: 4%;
+    }
+
+    .step:first-child {
+        margin-left: 4%;
+    }
+
+    .step {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 1476px) {
+    .effortless--title::after {
+        left: 20%;
+    }
+}
+
+
+@media (max-width: 1326px) {
+    .section--payments::after {
+        bottom: 6%;
+    }
+
+}
+
+@media (max-width: 1265px) {
+    .effortless--title::after {
+        left: 15%;
+    }
+}
+
+@media (max-width: 1208px) {
+    .step {
+        margin-top: 13%;
+    }
+
+}
+
+@media (max-width: 1098px) {
+    .section--payments::after {
+        bottom: 11%;
+    }
+}
+
+@media (max-width: 1073px) {
+    .verify--icon {
+        top: -28%;
+        right: -8%;
+    }
+
+}
+
+@media (max-width: 1065px) {
+    .effortless--title::after {
+        left: 13%;
+    }
+}
+
+@media (max-width: 1003px) {
+    .info--key::after {
+        height: 114%;
+        top: -9%;
+    }
+}
+
+@media (max-width: 991px) {
+    .main--nav {
+        display: none;
+    }
+
+    .logo--text::before {
+        left: 52%;
+    }
+
+    .participation--img--wrapper {
+        position: absolute;
+        right: -188px;
+        top: 12%;
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+        width: 100%;
+        margin: 0;
+    }
+
+    .information::before {
+        top: -93%;
+        left: 33%;
+        z-index: -100;
+    }
+
+    .participation--title {
+        font-size: 24px;
+    }
+
+    .participation--paragraph {
+        font-size: 16px;
+    }
+
+    .section--participation {
+        padding: 85px 30px 50px 30px;
+    }
+
+    .disclaimer--wrapper {
+        padding: 0 50px;
+    }
+
+    .information {
+        flex-direction: column;
+    }
+
+    .participation--text {
+        margin: 50px 20px;
+    }
+
+    .info--row:first-child, .info--row{
+         margin: 30px 0;
+    }
+
+    .section--payments::before {
+        width: 50%;
+    }
+
+    .section--payments::after {
+        width: 50%;
+        bottom: -5%;
+        left: 50%;
+    }
+
+    .section--payments {
+        margin-bottom: 100px;
+    }
+
+    .info--key {
+        max-width: 80px;
+    }
+
+
+    .part--img {
+        width: 120%;
+    }
+
+    .info--key::after {
+        height: 140%;
+    }
+
+    .section--1 {
+        background-image: url(assets/bg_mobile_no_cards.png);
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 110vh;
+    }
+
+    .main-content{
+        padding-top: 4%;
+    }
+
+    .effortless--title::after {
+        left: 6%;
+    }
+
+}
+
+@media (max-width: 939px) {
+    .boxes {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 780px) {
+    .effortless--title::after {
+        left: -5%;
+    }
+}
+
+@media (max-width: 766px) {
+    .participation--paragraph {
+        line-height: 28px;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .title--gradient, .title-seon {
+        font-size: 24px;
+        padding-top: 5%;
+        max-width: 228px;
+    }
+
+    .underline {
+        bottom: 60%;
+        width: 39%;
+        min-width: 290px;
+    }
+
+    .section--currency{
+        margin: 5% 0 15% 0;
+    }
+
+    .currency--wrapper {
+        height: 100px;
+    }
+
+    .euro {
+        left: 50%;
+        -webkit-transform: translateX(-90%) rotate(-10deg);
+        transform: translateX(-90%) rotate(-10deg);
+        top: 25px;
+        position: absolute;
+    }
+
+    .dollar {
+        top: 65px;
+        left: 50%;
+        -webkit-transform: translateX(-15%) rotate(10deg);
+        transform: translateX(-15%) rotate(10deg);
+        position: absolute;
+    }
+}
+
+
+@media (max-width: 761px) {
+    .cols:nth-child(1) {
+        order: 1;
+    }
+
+    .cols:nth-child(2) {
+        order: 2;
+    }
+
+    .cols:nth-child(3) {
+        order: 4;
+    }
+
+    .cols:nth-child(4) {
+        order: 3;
+    }
+
+    .grid-content {
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 746px) {
+
+    .timeframe {
+        width: 80%;
+    }
+
+    .section--payments::after {
+        width: 80%;
+        left: 18%;
+    }
+
+    .section--payments::before {
+        width: 80%;
+        left: 18%;
+    }
+
+}
+
+@media (max-width: 724px) {
+    .section--payments::after {
+        bottom: -10%;
+    }
+
+    .participation--text::before {
+        left: -20px;
+    }
+}
+
+@media (max-width: 670px) {
+    .effortless--title::after {
+        left: -15%;
+    }
+}
+
+@media (max-width: 610px) {
+    .step {
+        margin-top: 85px;
+    }
+}
+
+
+@media (max-width: 577px) {
+    .currency--title::after {
+        min-width: 200px;
+        width: 125%;
+        height: 65%;
+        bottom: 30%;
+        left: -24%;
+    }
+
+    .euro, .dollar {
+        width: 200px;
+        height: 130px;
+    }
+
+    .curr--text {
+        font-size: 16px;
+    }
+
+    .circle {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 569px) {
+    .grid-content {
+        gap: 3px;
+        padding: 30px;
+    }
+
+    .info--key {
+        font-size: 34px;
+        max-width: 100px;
+    }
+
+    .part--img {
+        width: 148%;
+    }
+    .participation--img--wrapper {
+        right: -175px;
+        z-index: -1;
+    }
+
+    .logo--text {
+        gap: 0;
+    }
+
+    .left--text, .right--text {
+        width: 40px;
+    }
+
+    .right--text {
+        left: -4%;
+    }
+}
+
+@media (max-width: 535px) {
+    .effortless--title::after {
+        left: -25%;
+    }
+}
+
+@media (max-width:527px) {
+
+    .underline {
+        bottom: 61%;
+        width: 39%;
+        min-width: 290px;
+    }
+}
+
+@media (max-width: 506px) {
+    .effortless--title::after {
+        bottom: 37%;
+        height: 39%;
+        left: 10%;
+        width: 90%;
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 491px) {
+    .effortless--title::after {
+        left: -8%;
+        top: 24%;
+        width: 123%;
+        height: 43%;
+        min-width: 124px;
+    }
+}
+
+@media (max-width: 477px) {
+    .section--currency{
+        overflow: hidden;
+    }
+    .currency--title {
+        max-width: 250px;
+    }
+    .currency--title::after {
+        min-width: 178px;
+        width: 247%;
+        height: 17%;
+        bottom: 61%;
+        left: -118%;
+    }
+}
+
+@media (max-width: 478px) {
+    .effortless--title {
+        margin: auto;
+    }
+}
+
+@media (max-width: 473px) {
+    .cols {
+        min-width: 120px;
+        flex: 1;
+    }
+
+    .worth {
+        font-size: 12px;
+    }
+
+    .col--head {
+        font-size: 12px;
+    }
+
+    .value {
+        font-size: 170%;
+    }
+}
+
+@media (max-width: 435px) {
+    .grid-content {
+        padding: 30px 30px 30px 0;
+    }
+
+    .cols:nth-child(1) {
+        padding-left: 30px;
+    }
+    .cols:nth-child(4) {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width:422px) {
+    .euro, .dollar {
+        width: 140px;
+        height: 100px;
+    }
+
+    .euro::after, .dollar::after {
+        width: 40%;
+    }
+
+    .curr--text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 410px) {
+    .info--key {
+        font-size: 24px;
+    }
+    .info--text {
+        font-size: 16px;
+    }
+    .info--key {
+        max-width: 56px;
+    }
+}
+
+@media (max-width: 393px) {
+    .section--payments::before {
+        top: -12%;
+    }
+
+    .step--text {
+        font-size: 14px;
+    }
+    .step--title {
+        font-size: 20px;
+    }
+
+    .part--img {
+        width: 148%;
+    }
+    .participation--img--wrapper {
+        right: -165px;
+        z-index: -1;
+    }
+
+    .participation--paragraph {
+        font-size: 14px;
+    }
+
+    .part-text {
+        width: 86%;
+    }
+
+    .info--key {
+        max-width: 56px;
+        font-size: 24px;
+    }
+
+    .info--text {
+        font-size: 15px;
+        max-width: 150px;
+    }
+
+    .info--row--2 .info--text {
+        max-width: 150px;
+    }
+
+    .info--row--3 .info--text{
+        max-width: 150px;
+    }
+
+    .info--key::after {
+        right: 5%;
+    }
+
+    .info--row--2 .info--key::after {
+        right: 10%;
+    }
+
+    .info--row--2 .info--key {
+        max-width: 118px;
+    }
+
+    .info--row--3 .info--key {
+        max-width: 125px;
+    }
+
+    .currency--text {
+        font-size: 14px;
+    }
+
+    .currency--title {
+        font-size: 26px;
+        max-width: 190px;
+    }
+
+    .currency--title::after {
+        height: 30%;
+    }
+
+    .timeframe {
+        font-size: 14px;
+    }
+
+    .effortless--title {
+        font-size: 24px;
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .box--4::before {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: #461c7e;
+        content: '';
+        border-radius: 50%;
+        filter: blur(80px);
+        -webkit-filter: blur(80px);
+        top: -10%;
+        left: 61%;
+    }
+}
+
+@media (width: 375px) and (height: 667px) {
+    .section--1 {
+        height: 109vh;
+    }
+
+}
+
+@media (max-width: 373px) {
+
+    .btn--nav{
+        width: 95px;
+    }
+    .cols:nth-child(1) {
+        padding-left: 0;
+    }
+    .cols:nth-child(4) {
+        padding-left: 0;
+    }
+
+    .col--head::before {
+        left: -3%;
+        width: 78%;
+    }
+
+    .cols {
+        flex: 0;
+    }
+
+    .section--participation {
+        padding: 150px 30px 50px 30px;
+    }
+
+    .effortless--title {
+        font-size: 24px;
+    }
+}
